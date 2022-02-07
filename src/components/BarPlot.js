@@ -3,17 +3,31 @@ import { Bar } from "react-chartjs-2"
 import "chart.js/auto"
 
 const options = {
-  responsive: false,
+  maintainAspectRatio: false,
   scales: {
     x : {
       display: false
     },
-
+    y: {
+      grid: {
+        color: "white",
+        borderColor:"white",
+      },
+      ticks: {
+        color: "white",
+        font: 100
+      }
+    }
   },
   animation: {
     duration: 0
   },
-  backgroundColor: "blue",
+  backgroundColor: "rgb(0, 110, 40)",
+  plugins: {
+    legend: {
+      display: false
+    }
+  }
 }
 
 const BarPlot = ({ values }) => {
@@ -23,7 +37,7 @@ const BarPlot = ({ values }) => {
     labels: labels,
     datasets: [
       {
-        label: "Sort",
+        label: "",
         data: values,
         borderWidth: 1
       }
@@ -37,7 +51,6 @@ const BarPlot = ({ values }) => {
         data={data}
         options={options}
         height="400"
-        width="1000"
       />
 
     </div>

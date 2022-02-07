@@ -22,8 +22,6 @@ const mergeSort = async (mergeArray, setData, fullArray, from) => {
   merge(leftArray, rightArray, mergeArray)
 
   for(var i = 0; i < mergeArray.length; i++){
-    console.log("index: " + i)
-    console.log("array val: " + mergeArray[i])
     fullArray[from] = mergeArray[i]
     from++
   }
