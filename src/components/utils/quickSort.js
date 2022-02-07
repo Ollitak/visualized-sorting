@@ -17,7 +17,7 @@ const quickSort = async (array, a, b, setData) => {
   await quickSort(array, k+1, b, setData)
 }
 
-const pivot = async (array, a, b, setData ) => {
+const pivot = async (array, a, b, setData) => {
   var k = a
   for (var i = a+1; i <= b; i++) {
     if(array[i] < array[a]) {
@@ -28,6 +28,7 @@ const pivot = async (array, a, b, setData ) => {
     }
   }
   swap(a, k, array)
+  setData([...array])
   return k
 }
 
