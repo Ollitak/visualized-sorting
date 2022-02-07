@@ -7,11 +7,13 @@ const options = {
   scales: {
     x : {
       display: false
-    }
+    },
+
   },
   animation: {
     duration: 0
-  }
+  },
+  backgroundColor: "blue",
 }
 
 const BarPlot = ({ values }) => {
@@ -35,7 +37,7 @@ const BarPlot = ({ values }) => {
         data={data}
         options={options}
         height="400"
-        width="500"
+        width="1000"
       />
 
     </div>
