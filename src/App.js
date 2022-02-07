@@ -16,7 +16,7 @@ const App = () => {
   },[])
 
   const randomizeArray = () => {
-    setData(Array.from({ length: NUMBER_OF_BARS }, () => Math.floor(Math.random() * 100)))
+    setData(Array.from({ length: NUMBER_OF_BARS }, () => Math.floor(Math.random() * 300)))
     setSorted(false)
   }
 
