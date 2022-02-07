@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# visualized-sorting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A few weeks before this project, I created simple visualization of common pathfinding algorithms (https://github.com/Ollitak/visualized-pathfinding).
+Now, I decided to continue that journey by visualizing sorting algorithms. Similar to pathfinding algorithms, the idea behind the project is that the visualization of the sorting process greatly helps in comprehension of algorithm's logic.
+
+Instead of vanilla JS, this time I used React and chart.js/react-chartjs-2 libraries to visualize the bar graph. I have coded the algorithms myself, based on the knowledge gathered from Algorithms and Data structures courses I attended last fall.
+
+Currently, the following sorting algorithms are implemented:
+
+* Insertion sort
+* Merge sort
+* Quick sort 
+
+# How to run it?
+### You can test the application here: https://ollitak.github.io/visualized-sorting/
 
 ## Available Scripts
 
