@@ -15,7 +15,7 @@ const insertionSort = async (array, setData) => {
     while(j >= 0 && array[j] > array[j+1]) {
       swap(j,j+1)
       setData([...array])
-      await sleep(0)
+      await sleep(20)
       j--
     }
   }
